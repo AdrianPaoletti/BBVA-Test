@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Mark Book";
+  src: url("/assets/fonts/Mark-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mark Bold";
+  src: url("/assets/fonts/Mark-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family-regular: "Mark Book";
+$font-family-bold: "Mark Bold";

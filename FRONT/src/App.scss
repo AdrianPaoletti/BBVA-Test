@@ -1,0 +1,9 @@
+@import "/src/styles/colors";
+
+.App {
+  text-align: center;
+  background-color: $primary-color;
+  color: $white;
+  height: 100vh;
+  overflow: hidden;
+}

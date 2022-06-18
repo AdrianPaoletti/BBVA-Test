@@ -1,0 +1,46 @@
+@import "/src/styles/fonts";
+@import "/src/styles/colors";
+
+.search-bar {
+  width: 71%;
+  max-width: 1200px;
+  position: relative;
+  padding-top: 48px;
+  input {
+    height: 48px;
+    padding: 16px 12px;
+    margin: 8px 0;
+    font-size: 0.9375rem;
+    font-family: $font-family-regular;
+    color: $white;
+    border: 1px solid $terciary-color;
+    width: 100%;
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  ::placeholder {
+    color: $terciary-color;
+  }
+  i {
+    position: absolute;
+    right: 16px;
+    top: 73px;
+    color: $terciary-color;
+
+    &:hover {
+      cursor: pointer;
+      color: $secondary-color;
+    }
+  }
+
+  &__error {
+    color: red;
+    text-align: left;
+    font-size: 0.6875rem;
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,77 @@
+@import "/src/styles/fonts";
+@import "/src/styles/colors";
+
+.forecast {
+  padding: 24px 48px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__my-list {
+    align-self: flex-end;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  &-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    max-width: 1200px;
+    margin-top: 24px;
+    padding-top: 16px;
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 0;
+      cursor: pointer;
+    }
+
+    &__weather {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-bottom: 24px;
+      }
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 16px;
+
+      p {
+        font-size: 0.75rem;
+        padding: 1px 0;
+      }
+    }
+
+    &__temperature {
+      font-size: 3rem;
+    }
+
+    &__geolocalization {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      h3 {
+        font-size: 1.375rem;
+        font-weight: 400;
+        padding: 0.5px 0;
+      }
+
+      p {
+        padding: 0.5px 0;
+      }
+    }
+  }
+
+  &__chart {
+    width: 75%;
+    max-width: 1200px;
+  }
+}

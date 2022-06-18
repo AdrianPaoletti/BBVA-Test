@@ -1,0 +1,28 @@
+@import "/src/styles/colors";
+
+.forecast-list {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  max-width: 1200px;
+  padding: 16px 0;
+
+  &__item {
+    border-radius: 8px;
+    padding: 4px;
+    &:hover {
+      background-color: $terciary-color;
+      cursor: pointer;
+    }
+  }
+
+  &__temperatures {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -8px;
+  }
+
+  &__week-day {
+    margin-bottom: -8px;
+  }
+}

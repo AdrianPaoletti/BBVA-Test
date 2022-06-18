@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "/",
+    "importHelpers": true,
+    "declaration": false,
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2018",
+    "lib": ["es2018", "dom"],
+    "types": ["node", "jest"],
+    "paths": {
+      "statics/*": ["src/statics/*"]
+    }
+  },
+  "include": ["./**/*.ts", ".eslintrc.js"],
+  "exclude": ["./dist", "node_modules"]
+}
